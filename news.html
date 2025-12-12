@@ -15,7 +15,7 @@
   <!-- HEADER -->
   <header class="header">
     <div class="container header-inner">
-      <button class="menu-button" id="menuButton" aria-label="Apri menu">☰</button>
+      <button class="menu-button" id="menuButton" aria-label="Apri menu" aria-controls="nav" aria-expanded="false">☰</button>
 
       <a href="index.html" class="logo">
         <span class="logo-text">
@@ -26,7 +26,24 @@
       <nav class="nav" id="nav">
         <a href="index.html" class="nav-link">Home</a>
         <a href="chi-siamo.html" class="nav-link">Chi Siamo</a>
-        <a href="news.html" class="nav-link">News</a>
+
+        <!-- NEWS DROPDOWN -->
+        <div class="nav-dropdown">
+          <a
+            href="news.html"
+            class="nav-link nav-dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            News ▾
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="news-unipa.html" class="nav-link">UniPa</a>
+            <a href="news-ersu.html" class="nav-link">ERSU</a>
+          </div>
+        </div>
+        <!-- /NEWS DROPDOWN -->
+
         <a href="drive.html" class="nav-link">Drive</a>
         <a href="guide.html" class="nav-link">Guide</a>
         <a href="modulistica.html" class="nav-link">Modulistica</a>
@@ -47,144 +64,61 @@
         <header class="section-header">
           <h1 class="section-title">News & Comunicazioni</h1>
           <p class="section-subtitle">
-            Tutti gli aggiornamenti importanti per gli studenti UNIPA: bandi ERSU, avvisi d’ateneo,
-            iniziative dell’associazione, eventi e opportunità.
+            Scegli la fonte: avvisi e comunicazioni ufficiali UniPa e ERSU Palermo.
           </p>
         </header>
       </div>
     </section>
 
-    <!-- NEWS GRID -->
+    <!-- SELEZIONE NEWS -->
     <section class="section">
       <div class="container">
         <div class="cards-grid">
 
-          <!-- NEWS 1 -->
-          <article class="news-card">
-            <div class="news-image">
-              <span class="news-chip">ERSU</span>
-            </div>
-            <div class="news-content">
-              <div class="news-meta">
-                <span class="news-source">ersupalermo.it</span>
-                <span class="news-dot">•</span>
-                <span class="news-date">gg/mm/aaaa</span>
-              </div>
-              <h2 class="news-title">Aggiornamento graduatorie borse di studio</h2>
-              <p class="news-text">
-                Pubblicate le graduatorie provvisorie ERSU: controlla il tuo stato, gli importi
-                e le prossime date da tenere a mente.
-              </p>
-              <div class="news-footer">
-                <a href="#" class="btn-link">Leggi</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- NEWS 2 -->
+          <!-- CARD UNIPA -->
           <article class="news-card">
             <div class="news-image">
               <span class="news-chip">UNIPA</span>
             </div>
             <div class="news-content">
-              <div class="news-meta">
-                <span class="news-source">unipa.it</span>
-                <span class="news-dot">•</span>
-                <span class="news-date">gg/mm/aaaa</span>
-              </div>
-              <h2 class="news-title">Scadenze piani di studio – promemoria</h2>
+              <h2 class="news-title">News UniPa</h2>
               <p class="news-text">
-                L'Ateneo ha comunicato le scadenze per la compilazione dei piani di studio:
-                controlla il tuo corso per non perdere la finestra utile.
+                Avvisi e comunicazioni utili agli studenti (Segreterie Studenti / Ateneo).
               </p>
               <div class="news-footer">
-                <a href="#" class="btn-link">Leggi</a>
+                <a href="news-unipa.html" class="btn-link">Apri News UniPa →</a>
               </div>
             </div>
           </article>
 
-          <!-- NEWS 3 -->
-          <article class="news-card">
-            <div class="news-image">
-              <span class="news-chip">uniXcento</span>
-            </div>
-            <div class="news-content">
-              <div class="news-meta">
-                <span class="news-source">unixcento.it</span>
-                <span class="news-dot">•</span>
-                <span class="news-date">gg/mm/aaaa</span>
-              </div>
-              <h2 class="news-title">Assemblea studenti – nuova data</h2>
-              <p class="news-text">
-                Rimandata l’assemblea generale: scopri la nuova data, i temi all’ordine del giorno
-                e come partecipare attivamente.
-              </p>
-              <div class="news-footer">
-                <a href="#" class="btn-link">Leggi</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- NEWS 4 -->
-          <article class="news-card">
-            <div class="news-image">
-              <span class="news-chip">Eventi</span>
-            </div>
-            <div class="news-content">
-              <div class="news-meta">
-                <span class="news-source">uniXcento</span>
-                <span class="news-dot">•</span>
-                <span class="news-date">gg/mm/aaaa</span>
-              </div>
-              <h2 class="news-title">Aperitivo universitario – nuova edizione</h2>
-              <p class="news-text">
-                Torna uno degli eventi più attesi: musica, networking, giochi e stand informativi.
-              </p>
-              <div class="news-footer">
-                <a href="#" class="btn-link">Scopri di più</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- NEWS 5 -->
-          <article class="news-card">
-            <div class="news-image">
-              <span class="news-chip">Opportunità</span>
-            </div>
-            <div class="news-content">
-              <div class="news-meta">
-                <span class="news-source">EU Careers</span>
-                <span class="news-dot">•</span>
-                <span class="news-date">gg/mm/aaaa</span>
-              </div>
-              <h2 class="news-title">Bando Erasmus+ tirocini</h2>
-              <p class="news-text">
-                Aperte le candidature per i tirocini Erasmus: requisiti, borse disponibili, durata
-                e procedura di domanda.
-              </p>
-              <div class="news-footer">
-                <a href="#" class="btn-link">Leggi</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- NEWS 6 -->
+          <!-- CARD ERSU -->
           <article class="news-card">
             <div class="news-image">
               <span class="news-chip">ERSU</span>
             </div>
             <div class="news-content">
-              <div class="news-meta">
-                <span class="news-source">ersupalermo.it</span>
-                <span class="news-dot">•</span>
-                <span class="news-date">gg/mm/aaaa</span>
-              </div>
-              <h2 class="news-title">Aggiornamento mense universitarie</h2>
+              <h2 class="news-title">News ERSU Palermo</h2>
               <p class="news-text">
-                Orari, chiusure temporanee e nuove procedure di accesso alle mense ERSU.
+                Borse di studio, mense, graduatorie, bandi e comunicazioni ERSU.
               </p>
               <div class="news-footer">
-                <a href="#" class="btn-link">Leggi</a>
+                <a href="news-ersu.html" class="btn-link">Apri News ERSU →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- (Opzionale) CARD UNIXCENTO -->
+          <article class="news-card">
+            <div class="news-image">
+              <span class="news-chip">uniXcento</span>
+            </div>
+            <div class="news-content">
+              <h2 class="news-title">News uniXcento</h2>
+              <p class="news-text">
+                Aggiornamenti dell’associazione, eventi e comunicazioni interne.
+              </p>
+              <div class="news-footer">
+                <a href="news-unixcento.html" class="btn-link">Vai alle news →</a>
               </div>
             </div>
           </article>
