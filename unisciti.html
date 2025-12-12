@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Unisciti a noi – UNIXCENTO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Diventa socio UNIXCENTO: tesseramento, partecipazione alla vita associativa e supporto agli studenti UNIPA."
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <button class="menu-button" id="menuButton" aria-label="Apri menu">☰</button>
+
+      <a href="index.html" class="logo">
+        <span class="logo-text">
+          UNI<span class="logo-x">X</span>CENTO
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="chi-siamo.html" class="nav-link">Chi Siamo</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="drive.html" class="nav-link">Drive</a>
+        <a href="guide.html" class="nav-link">Guide</a>
+        <a href="modulistica.html" class="nav-link">Modulistica</a>
+        <a href="unisciti.html" class="nav-link">Unisciti</a>
+        <a href="contatti.html" class="nav-link">Contatti</a>
+      </nav>
+
+      <a href="unisciti.html" class="btn-pill btn-pill-outline header-cta">
+        Tesseramento 2025
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container join-grid">
+        <div>
+          <h1 class="section-title">Diventa socio UNIXCENTO</h1>
+          <p class="section-subtitle">
+            UniXcento vive grazie all’impegno volontario di studentesse e studenti che
+            dedicano un po’ del loro tempo alla rappresentanza, al supporto e all’organizzazione di attività.
+          </p>
+
+          <ul class="benefits-list">
+            <li>Partecipi alle assemblee e alle decisioni dell’associazione</li>
+            <li>Puoi entrare nei gruppi di lavoro (comunicazione, eventi, diritto allo studio…)</li>
+            <li>Ricevi aggiornamenti dedicati su bandi e opportunità</li>
+            <li>Acquisisci esperienza utile anche nel mondo del lavoro</li>
+          </ul>
+        </div>
+
+        <!-- FORM TESSERAMENTO -->
+        <form class="join-form" id="joinForm">
+          <div class="field">
+            <label for="name">Nome e cognome</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Email universitaria</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="nome.cognome@you.unipa.it"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="course">Corso di laurea</label>
+            <input id="course" name="course" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="message">In che modo vuoi partecipare?</label>
+            <textarea id="message" name="message" rows="3"
+              placeholder="Es. supporto matricole, organizzazione eventi, social media, rappresentanza…"></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary full-width">
+            Invia richiesta di tesseramento
+          </button>
+
+          <div class="form-note">
+            I dati verranno utilizzati solo per ricontattarti in merito alle attività
+            dell’associazione e al tesseramento.
+          </div>
+
+          <div id="joinStatus" class="form-status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        © <span id="yearSpan"></span> UNIXCENTO. Tutti i diritti riservati.
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="contatti.html">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
